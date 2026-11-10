@@ -268,4 +268,4 @@ shiny::runApp("C:\Users\yehyu\Desktop\murder_Rshiny")
 
 # Posit Cloud Connect
 # install.packages("rsconnect")
-rsconnect::writeManifest() # 같은 함수 이름 있을때  robust하게게
+# rsconnect::writeManifest() # 같은 함수 이름 있을때  robust하게게
