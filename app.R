@@ -237,7 +237,7 @@ server <- function(input, output) {
 # Run the app
 # ------------------------------------------------------------
 shinyApp(ui, server)
-shiny::runApp("C:\Users\yehyu\Desktop\murder_Rshiny")
+# shiny::runApp("C:\Users\yehyu\Desktop\murder_Rshiny")
 
 # ============================================================
 # [Deployment — run in the Console, not inside app.R]
