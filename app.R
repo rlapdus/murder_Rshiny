@@ -42,7 +42,7 @@ library(ggplot2)
 # Run App / runApp() / the deployment server all run from the folder that holds app.R,
 # so for a file in the same folder you only need its name.
 # ------------------------------------------------------------
-murders <- read.csv("data/murders.csv")
+murders <- read.csv("murders.csv")
 
 # Compute the murder rate (per 100,000 people) once, outside the app (at the top)
 # -> runs only once when the app starts, which is efficient
@@ -237,7 +237,7 @@ server <- function(input, output) {
 # Run the app
 # ------------------------------------------------------------
 shinyApp(ui, server)
-
+shiny::runApp("C:\Users\yehyu\Desktop\murder_Rshiny")
 
 # ============================================================
 # [Deployment — run in the Console, not inside app.R]
@@ -268,4 +268,4 @@ shinyApp(ui, server)
 
 # Posit Cloud Connect
 # install.packages("rsconnect")
-# rsconnect::writeManifest()
+rsconnect::writeManifest() # 같은 함수 이름 있을때  robust하게게
